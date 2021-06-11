@@ -23,11 +23,10 @@ class MemberServiceIntegrationTest {
     MemberRepository memberRepository;
 
     @Test
-    @Commit
     public void 회원가입() throws Exception {
         //Given
         Member member = new Member();
-        member.setName("우진!!");
+        member.setName("우진!!!");
         //When
         Long saveId = memberService.join(member);
         //Then
